@@ -24,7 +24,7 @@ Clone the Repository:
 
 bash
 Copy code
-git clone <repository-url>
+git clone https://github.com/mohammedhassan0199/Weather-App
 Navigate to the Project Directory:
 
 bash
