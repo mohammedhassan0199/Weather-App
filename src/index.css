@@ -1,0 +1,169 @@
+/* Global reset to ensure consistent padding, margin, and box-sizing across browsers */
+* {
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/* Styles for the body element: sets a light gray background and adds vertical padding */
+body {
+    background-color: #D6D7DA;
+    padding: 40px 0px;
+}
+
+/* Centralized container with a column layout for aligning content */
+.main-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for form elements, centers the content horizontally */
+.form-body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Styles for the form, including width and spacing between elements */
+form {
+    width: 90%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* Input field styles: full-width, padding, and rounded corners on the left */
+form input {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 16px;
+}
+
+/* Button styles: padding, no border, and rounded corners on the right */
+form button {
+    padding: 0 20px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 16px;
+}
+
+/* Main container for content: white background, padding, rounded corners, and flexible layout */
+.container {
+    background-color: white;
+    padding: 60px 20%;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    border-radius: 40px;
+}
+
+/* Image styles: fixed width */
+img {
+    width: 120px;
+}
+
+/* Primary heading styles: adds margin and large font size */
+h1 {
+    margin: 20px 0;
+    font-size: 56px;
+}
+
+/* Sub-container heading styles: smaller font size for subtitles */
+.sub-container h3 {
+    font-size: 20px;
+}
+
+/* Sub-container paragraph heading: adds margin */
+.sub-container h4 {
+    margin: 10px 0;
+}
+
+/* Main heading within another context: medium font size with bottom margin */
+.main h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+/* Row container with grid layout: three columns with spacing between items */
+.row {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+/* Column styles: padding, rounded corners, shadows, and content alignment */
+.col {
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Subheading within a column: margin and font size */
+.col h4 {
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+/* Responsive design for screen widths less than 1450px */
+@media screen and (max-width: 1450px) {
+    .container {
+        padding: 60px 10%;
+    }
+}
+
+/* Responsive design for screen widths less than 1000px */
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px 10%;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin: 10px 0;
+    }
+
+    /* Adds spacing between sub-container and other elements */
+    .container .sub-container {
+        margin-bottom: 10px;
+    }
+}
+
+/* Responsive design for screen widths less than 705px */
+@media screen and (max-width: 705px) {
+    .container {
+        padding: 20px 5%;
+    }
+
+    /* Adjusts padding and font size for smaller screens */
+    .col {
+        padding: 20px 30px;
+    }
+
+    .col h4 {
+        font-size: 21px;
+    }
+}
+
+/* Responsive design for screen widths less than 502px */
+@media screen and (max-width: 502px) {
+    /* Adjusts the grid layout to two columns for smaller screens */
+    .row {
+        grid-template-columns: auto auto;
+    }
+    
+}
